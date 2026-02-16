@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Spark Capital - A Venture Capital firm that invests in Enterprise AI Startups via our Venture Studio">
+    <title>Spark Capital - Venture Studio led Startup Investing</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Spark Capital Logo" class="logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="investors.html" class="nav-link">Investors</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <!-- Animated Gradient Orbs -->
+        <div class="hero-gradient-orb hero-gradient-orb-1"></div>
+        <div class="hero-gradient-orb hero-gradient-orb-2"></div>
+        <div class="hero-gradient-orb hero-gradient-orb-3"></div>
+        <div class="hero-gradient-orb hero-gradient-orb-4"></div>
+
+        <!-- Investment Scribbles Background Layer -->
+        <div class="scribbles-layer">
+            <!-- Words -->
+            <span class="scribble scribble-word" style="top: 12%; left: 3%;">ROI</span>
+            <span class="scribble scribble-word" style="top: 25%; right: 8%;">Growth</span>
+            <span class="scribble scribble-word" style="bottom: 30%; left: 5%;">Scale</span>
+            <span class="scribble scribble-word" style="bottom: 15%; right: 5%;">Fund</span>
+            <span class="scribble scribble-word" style="top: 8%; right: 25%;">Startup</span>
+            <span class="scribble scribble-word" style="bottom: 8%; left: 25%;">Equity</span>
+
+            <!-- Symbols -->
+            <span class="scribble scribble-symbol" style="top: 18%; left: 12%;">$</span>
+            <span class="scribble scribble-symbol" style="top: 35%; right: 3%;">%</span>
+            <span class="scribble scribble-symbol" style="bottom: 22%; right: 12%;">$</span>
+            <span class="scribble scribble-symbol" style="bottom: 40%; left: 2%;">✦</span>
+            <span class="scribble scribble-symbol" style="top: 50%; left: 8%;">+</span>
+
+            <!-- Chart/Arrow Doodles (SVG) -->
+            <svg class="scribble scribble-doodle" style="top: 15%; right: 15%;" width="50" height="40"
+                viewBox="0 0 50 40">
+                <path d="M5 35 L15 25 L25 30 L35 15 L45 5" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+                <path d="M38 5 L45 5 L45 12" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+
+            <svg class="scribble scribble-doodle" style="bottom: 25%; left: 10%;" width="45" height="35"
+                viewBox="0 0 45 35">
+                <path d="M5 30 Q15 10 25 20 T45 5" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+
+            <svg class="scribble scribble-doodle" style="top: 40%; right: 2%;" width="40" height="40"
+                viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-dasharray="5,3" />
+            </svg>
+
+            <svg class="scribble scribble-doodle" style="bottom: 12%; right: 20%;" width="55" height="30"
+                viewBox="0 0 55 30">
+                <rect x="5" y="20" width="8" height="10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <rect x="18" y="12" width="8" height="18" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <rect x="31" y="5" width="8" height="25" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <path d="M5 25 L18 17 L31 10 L48 3" stroke="currentColor" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" stroke-dasharray="2,2" />
+            </svg>
+
+            <svg class="scribble scribble-doodle" style="top: 60%; left: 3%;" width="35" height="35"
+                viewBox="0 0 35 35">
+                <path d="M5 25 L17 5 L30 25" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M10 18 L25 18" stroke="currentColor" stroke-width="1.5" fill="none" />
+            </svg>
+
+            <!-- Arrows -->
+            <svg class="scribble scribble-doodle scribble-arrow" style="top: 70%; right: 8%;" width="40" height="25"
+                viewBox="0 0 40 25">
+                <path d="M5 20 Q20 5 35 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+                <path d="M30 8 L35 12 L30 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+            <svg class="scribble scribble-doodle" style="top: 5%; left: 35%;" width="30" height="30"
+                viewBox="0 0 30 30">
+                <path d="M15 5 L15 25 M5 15 L25 15" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+
+            <!-- Lightbulb Doodle -->
+            <svg class="scribble scribble-doodle" style="bottom: 5%; left: 12%;" width="30" height="40"
+                viewBox="0 0 30 40">
+                <path d="M15 5 A10 10 0 1 1 15 25 Q15 30 12 32 L18 32 Q15 30 15 25 A10 10 0 1 1 15 5"
+                    stroke="currentColor" stroke-width="1.5" fill="none" />
+                <path d="M12 35 L18 35 M13 38 L17 38" stroke="currentColor" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="hero-content animate-on-scroll">
+
+            <!-- Left Column: Text Content -->
+            <div class="hero-text">
+                <div class="hero-eyebrow">AI-first Venture Studio</div>
+                <h1 class="hero-title">
+                    A new way in <br><span class="hero-title-accent">venture investing<svg class="accent-underline"
+                            viewBox="0 0 200 20" preserveAspectRatio="none">
+                            <path d="M0 15 Q 40 5, 100 12 T 200 10" fill="none" stroke="#7FFF00" stroke-width="4"
+                                stroke-linecap="round" />
+                        </svg></span>
+                </h1>
+                <p class="hero-description">
+                    We are a Venture Capital firm that invests in Enterprise AI Startups via our Venture Studio. We do
+                    this via a unique two fund model. Fund 1 invests and initially owns 100% of new startups that are
+                    incubated from ideas generated internally via our Venture Studio. While Fund 2 invests only after a
+                    startup gets to breakeven and is on track to $1million in ARR. Fund 2's growth capital accelerates
+                    the startups to multimillion revenue and readies it for external investors.
+                </p>
+            </div>
+
+            <!-- Right Column: Hero Visual -->
+            <div class="hero-visual-container" style="display: flex; align-items: center; justify-content: center;">
+                <img src="images/Venture Studio く.png" alt="Spark Capital Investment Ecosystem" class="hero-visual">
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})">
+            <div class="scroll-arrow-icon"></div>
+        </div>
+    </section>
+
+    <!-- THREE PHASE MODEL SECTION -->
+    <section class="section section-light-blue">
+        <!-- Investment Scribbles Background Layer -->
+        <div class="scribbles-layer">
+            <span class="scribble scribble-symbol" style="top: 18%; left: 12%;">$</span>
+            <span class="scribble scribble-symbol" style="top: 35%; right: 3%;">%</span>
+            <span class="scribble scribble-symbol" style="bottom: 22%; right: 12%;">$</span>
+            <span class="scribble scribble-symbol" style="bottom: 40%; left: 2%;">✦</span>
+            <span class="scribble scribble-symbol" style="top: 50%; left: 8%;">+</span>
+            <svg class="scribble scribble-doodle" style="top: 15%; right: 15%;" width="50" height="40"
+                viewBox="0 0 50 40">
+                <path d="M5 35 L15 25 L25 30 L35 15 L45 5" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+                <path d="M38 5 L45 5 L45 12" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="bottom: 25%; left: 10%;" width="45" height="35"
+                viewBox="0 0 45 35">
+                <path d="M5 30 Q15 10 25 20 T45 5" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="top: 40%; right: 2%;" width="40" height="40"
+                viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-dasharray="5,3" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="bottom: 12%; right: 20%;" width="55" height="30"
+                viewBox="0 0 55 30">
+                <rect x="5" y="20" width="8" height="10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <rect x="18" y="12" width="8" height="18" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <rect x="31" y="5" width="8" height="25" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <path d="M5 25 L18 17 L31 10 L48 3" stroke="currentColor" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" stroke-dasharray="2,2" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="top: 60%; left: 3%;" width="35" height="35"
+                viewBox="0 0 35 35">
+                <path d="M5 25 L17 5 L30 25" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M10 18 L25 18" stroke="currentColor" stroke-width="1.5" fill="none" />
+            </svg>
+            <svg class="scribble scribble-doodle scribble-arrow" style="top: 70%; right: 8%;" width="40" height="25"
+                viewBox="0 0 40 25">
+                <path d="M5 20 Q20 5 35 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+                <path d="M30 8 L35 12 L30 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="bottom: 5%; left: 12%;" width="30" height="40"
+                viewBox="0 0 30 40">
+                <path d="M15 5 A10 10 0 1 1 15 25 Q15 30 12 32 L18 32 Q15 30 15 25 A10 10 0 1 1 15 5"
+                    stroke="currentColor" stroke-width="1.5" fill="none" />
+                <path d="M12 35 L18 35 M13 38 L17 38" stroke="currentColor" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="text-center mb-12 animate-on-scroll">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem;">Our Unique 3
+                    Phase<br>Startup Investing Model</h2>
+                <p class="section-subtitle">Our investing model takes a startup from ideation to MVP to revenue and
+                    beyond. We do this through a unique 3 phase startup investing model.</p>
+            </div>
+
+            <div class="step-cards-grid grid-3-cols">
+                <!-- Scribble Annotation: Left of Card 1 -->
+                <div class="card-scribble scribble-left-1 animate-on-scroll">
+                    <span class="scribble-handwriting">from idea<br>to product</span>
+                    <svg width="30" height="20" viewBox="0 0 30 20">
+                        <path d="M5 15 Q15 5 25 10" stroke="#f97316" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M20 6 L25 10 L20 14" stroke="#f97316" stroke-width="2" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <!-- Phase 1 Card -->
+                <div class="step-card animate-on-scroll">
+                    <span class="step-label step-label-gradient">Phase 1</span>
+                    <div class="step-visual">
+                        <!-- Icon 1: Idea/Bulb -->
+                        <svg class="step-icon-main" viewBox="0 0 80 80" width="80" height="80">
+                            <defs>
+                                <linearGradient id="iconGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#40E0D0" />
+                                    <stop offset="100%" style="stop-color:#00D9FF" />
+                                </linearGradient>
+                            </defs>
+                            <rect rx="18" width="80" height="80" fill="url(#iconGrad1)" opacity="0.15" />
+                            <text x="40" y="50" text-anchor="middle" font-size="36">💡</text>
+                        </svg>
+                        <!-- Icon 2: Sprout -->
+                        <svg class="step-icon-secondary" viewBox="0 0 55 55" width="55" height="55">
+                            <rect rx="14" width="55" height="55" fill="#e0f2fe" />
+                            <text x="28" y="36" text-anchor="middle" font-size="24">🌱</text>
+                        </svg>
+                        <!-- Icon 3: Target/Goal -->
+                        <svg class="step-icon-tertiary" viewBox="0 0 45 45" width="45" height="45">
+                            <rect rx="12" width="45" height="45" fill="#ccfbf1" />
+                            <text x="23" y="30" text-anchor="middle" font-size="20">🎯</text>
+                        </svg>
+                    </div>
+                    <div class="step-content step-content-cyan">
+                        <h3 class="step-title">Pre-seed Investing</h3>
+                        <div class="step-divider"></div>
+                        <p class="step-description">Fund 1 invests and initially owns 100% of new startups incubated via
+                            our
+                            Venture Studio; and builds the startups from idea to $1M ARR. Post which the startup exits
+                            our
+                            Venture Studio and moves to Phase 2 of investing.</p>
+                    </div>
+                </div>
+
+                <!-- Phase 2 Card -->
+                <div class="step-card animate-on-scroll">
+                    <span class="step-label step-label-gradient">Phase 2</span>
+                    <div class="step-visual">
+                        <!-- Icon 1: Chart -->
+                        <svg class="step-icon-main" viewBox="0 0 80 80" width="80" height="80">
+                            <defs>
+                                <linearGradient id="iconGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4169E1" />
+                                    <stop offset="100%" style="stop-color:#1E90FF" />
+                                </linearGradient>
+                            </defs>
+                            <rect rx="18" width="80" height="80" fill="url(#iconGrad2)" opacity="0.15" />
+                            <text x="40" y="50" text-anchor="middle" font-size="36">📈</text>
+                        </svg>
+                        <!-- Icon 2: Money Bag -->
+                        <svg class="step-icon-secondary" viewBox="0 0 55 55" width="55" height="55">
+                            <rect rx="14" width="55" height="55" fill="#dbeafe" />
+                            <text x="28" y="36" text-anchor="middle" font-size="24">💰</text>
+                        </svg>
+                        <!-- Icon 3: Handshake/Deal -->
+                        <svg class="step-icon-tertiary" viewBox="0 0 45 45" width="45" height="45">
+                            <rect rx="12" width="45" height="45" fill="#bfdbfe" />
+                            <text x="23" y="30" text-anchor="middle" font-size="20">🤝</text>
+                        </svg>
+                    </div>
+                    <div class="step-content step-content-blue">
+                        <h3 class="step-title">Seed Investing</h3>
+                        <div class="step-divider"></div>
+                        <p class="step-description">Fund 2 invests in Phase 2 and takes 20-30% equity in the startup,
+                            with
+                            another 10-20% equity made available for a proven sales leader to take on the CEO role and
+                            to
+                            accelerate the startup to multimillion revenue.</p>
+                    </div>
+                </div>
+
+                <!-- Scribble Annotation: Right of Card 2 -->
+                <div class="card-scribble scribble-right-2 animate-on-scroll">
+                    <span class="scribble-handwriting">scaling to<br>multimillion</span>
+                    <svg width="30" height="20" viewBox="0 0 30 20">
+                        <path d="M25 15 Q15 5 5 10" stroke="#4169E1" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M10 6 L5 10 L10 14" stroke="#4169E1" stroke-width="2" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <!-- Scribble Annotation: Bottom of Card 2 -->
+                <div class="card-scribble scribble-bottom-2 animate-on-scroll">
+                    <span class="scribble-handwriting">independent<br>& thriving</span>
+                    <svg width="20" height="30" viewBox="0 0 20 30">
+                        <path d="M10 5 Q15 15 10 25" stroke="#4169E1" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M6 20 L10 25 L14 20" stroke="#4169E1" stroke-width="2" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+
+
+                <!-- Phase 3 Card -->
+                <div class="step-card animate-on-scroll">
+                    <span class="step-label step-label-gradient">Phase 3</span>
+                    <div class="step-visual">
+                        <!-- Icon 1: Rocket -->
+                        <svg class="step-icon-main" viewBox="0 0 80 80" width="80" height="80">
+                            <defs>
+                                <linearGradient id="iconGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#9333EA" />
+                                    <stop offset="100%" style="stop-color:#A855F7" />
+                                </linearGradient>
+                            </defs>
+                            <rect rx="18" width="80" height="80" fill="url(#iconGrad3)" opacity="0.15" />
+                            <text x="40" y="50" text-anchor="middle" font-size="36">🚀</text>
+                        </svg>
+                        <!-- Icon 2: Building -->
+                        <svg class="step-icon-secondary" viewBox="0 0 55 55" width="55" height="55">
+                            <rect rx="14" width="55" height="55" fill="#ede9fe" />
+                            <text x="28" y="36" text-anchor="middle" font-size="24">🏢</text>
+                        </svg>
+                        <!-- Icon 3: Globe -->
+                        <svg class="step-icon-tertiary" viewBox="0 0 45 45" width="45" height="45">
+                            <rect rx="12" width="45" height="45" fill="#fae8ff" />
+                            <text x="23" y="30" text-anchor="middle" font-size="20">🌐</text>
+                        </svg>
+                    </div>
+                    <div class="step-content step-content-purple">
+                        <h3 class="step-title">Series A & Beyond</h3>
+                        <div class="step-divider"></div>
+                        <p class="step-description">Phase 3 is when External Investors enter the startup’s cap table.
+                            During
+                            this phase the startup will be on track to multimillion revenue and starts to operate fully
+                            independently as a fast growing tech company.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- OUR STORY SECTION -->
+    <!-- OUR STORY & ROCKET SECTION -->
+    <section id="our-story-section" class="section">
+        <div class="container">
+            <div class="story-rocket-grid animate-on-scroll">
+                <!-- Row 1: Content -->
+                <div class="story-text-column">
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem;">Our Story
+                    </h2>
+                    <p style="color: #1a1a1a;">Spark Capital was born out of our frustration as Angel Investors, having
+                        seen way too many startups perish at the infamous Death Valley curve. Our core teams extensive
+                        experience in bootstrapping and growing tech startups to multimillion revenue, led us to a new
+                        way to invest and incubate B2B tech startups.</p>
+                    <p style="color: #1a1a1a;">It taught us the importance of execution over the ideas itself, the
+                        criticality of getting to paying customers quickly and the necessity to scale the startup beyond
+                        $1million ARR. Our investment model via Venture Studio is based on these learning and our early
+                        success with some of our startups getting to multimillion in annuity revenues.</p>
+                </div>
+
+                <!-- Column 2: Rocket Visual -->
+                <div class="rocket-visual-container">
+                    <img src="images/3rd banner image.png" alt="Our Venture Studio - Rocket"
+                        class="rocket-image-visual">
+                </div>
+
+                <!-- Row 2: Aligned CTAs -->
+                <div class="story-cta-left">
+                    <a href="about.html" class="btn btn-primary">Read more</a>
+                </div>
+
+                <div class="story-cta-right">
+                    <a href="portfolio.html" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR FUNDS SECTION -->
+    <section class="section section-light-blue">
+        <!-- Investment Scribbles Background Layer -->
+        <div class="scribbles-layer">
+            <span class="scribble scribble-symbol" style="top: 18%; left: 12%;">$</span>
+            <span class="scribble scribble-symbol" style="top: 35%; right: 3%;">%</span>
+            <span class="scribble scribble-symbol" style="bottom: 22%; right: 12%;">$</span>
+            <span class="scribble scribble-symbol" style="bottom: 40%; left: 2%;">✦</span>
+            <span class="scribble scribble-symbol" style="top: 50%; left: 8%;">+</span>
+            <svg class="scribble scribble-doodle" style="top: 15%; right: 15%;" width="50" height="40"
+                viewBox="0 0 50 40">
+                <path d="M5 35 L15 25 L25 30 L35 15 L45 5" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+                <path d="M38 5 L45 5 L45 12" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="bottom: 25%; left: 10%;" width="45" height="35"
+                viewBox="0 0 45 35">
+                <path d="M5 30 Q15 10 25 20 T45 5" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="top: 40%; right: 2%;" width="40" height="40"
+                viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-dasharray="5,3" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="bottom: 12%; right: 20%;" width="55" height="30"
+                viewBox="0 0 55 30">
+                <rect x="5" y="20" width="8" height="10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <rect x="18" y="12" width="8" height="18" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <rect x="31" y="5" width="8" height="25" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <path d="M5 25 L18 17 L31 10 L48 3" stroke="currentColor" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" stroke-dasharray="2,2" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="top: 60%; left: 3%;" width="35" height="35"
+                viewBox="0 0 35 35">
+                <path d="M5 25 L17 5 L30 25" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M10 18 L25 18" stroke="currentColor" stroke-width="1.5" fill="none" />
+            </svg>
+            <svg class="scribble scribble-doodle scribble-arrow" style="top: 70%; right: 8%;" width="40" height="25"
+                viewBox="0 0 40 25">
+                <path d="M5 20 Q20 5 35 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+                <path d="M30 8 L35 12 L30 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <svg class="scribble scribble-doodle" style="bottom: 5%; left: 12%;" width="30" height="40"
+                viewBox="0 0 30 40">
+                <path d="M15 5 A10 10 0 1 1 15 25 Q15 30 12 32 L18 32 Q15 30 15 25 A10 10 0 1 1 15 5"
+                    stroke="currentColor" stroke-width="1.5" fill="none" />
+                <path d="M12 35 L18 35 M13 38 L17 38" stroke="currentColor" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="text-center mb-12 animate-on-scroll">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem;">Our Funds</h2>
+                <p class="section-subtitle">Our capital strategy is built to confront the hardest phase of startup risk
+                    head-on. Fund 1 absorbs early uncertainty through ownership, control, and deep validation inside our
+                    Venture Studio. Fund 2 enters once the path forward is clear, revenue is established, and growth
+                    becomes repeatable. This structure allows risk to fall before capital scales.</p>
+            </div>
+
+            <!-- ═══ FUND 2 — Content Left · Stats Right ═══ -->
+            <div class="fund-platform-card fund-purple-theme animate-on-scroll">
+                <div class="fund-card-deco"></div>
+                <div class="fund-blob-3"></div>
+
+                <div class="fund-platform-grid">
+                    <!-- Content Column -->
+                    <div class="fund-content">
+                        <span class="fund-badge"><span class="fund-badge-dot"></span> Open to LPs</span>
+                        <h3>Fund 2</h3>
+                        <span class="fund-headline-accent"></span>
+
+                        <p class="fund-description">Having seen success with Fund 1, we are now on our 2nd Fund and
+                            continuing to onboard Limited Partners or LPs to Fund 2. With Fund 2, our aim is to enable
+                            LPs to participate in startup investing after early validation and revenue milestones are
+                            achieved.</p>
+
+                        <p class="fund-description">Fund II follows an LP-first structure where investor capital is
+                            returned in full, followed by a 7–8% preferred return, before profits are shared under a
+                            standard 80/20 carry. Investing only in post-revenue enterprise AI companies.</p>
+
+                        <div class="fund-cta-area">
+                            <a href="investors.html" class="btn btn-primary">Participate in Fund 2 <svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Stats Column -->
+                    <div class="stats-grid">
+                        <!-- Target Sector -->
+                        <div class="stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2a4 4 0 0 0-4 4c0 2 2 3 2 6h4c0-3 2-4 2-6a4 4 0 0 0-4-4z" />
+                                    <path d="M10 18h4" />
+                                    <path d="M10 22h4" />
+                                    <circle cx="12" cy="6" r="1" />
+                                </svg>
+                            </div>
+                            <span class="stat-card-value">E-AI</span>
+                            <span class="stat-card-label">Target Sector</span>
+                        </div>
+
+                        <!-- Equity Stake -->
+                        <div class="stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 2a10 10 0 0 1 0 20" />
+                                    <path d="M12 12V2" />
+                                    <path d="M12 12l7 7" />
+                                </svg>
+                            </div>
+                            <span class="stat-card-value">30%</span>
+                            <span class="stat-card-label">Equity Stake</span>
+                        </div>
+
+                        <!-- Pref Return -->
+                        <div class="stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                    <polyline points="16 7 22 7 22 13" />
+                                </svg>
+                            </div>
+                            <span class="stat-card-value">7-8%</span>
+                            <span class="stat-card-label">Pref Return</span>
+                        </div>
+
+                        <!-- Carry Split -->
+                        <div class="stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M16 3h5v5" />
+                                    <path d="M8 3H3v5" />
+                                    <path d="M12 22v-8.5A2.5 2.5 0 0 1 14.5 11H21" />
+                                    <path d="M12 22v-8.5A2.5 2.5 0 0 0 9.5 11H3" />
+                                </svg>
+                            </div>
+                            <span class="stat-card-value">80/20</span>
+                            <span class="stat-card-label">Carry Split</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ═══ FUND 1 — Stats Left · Content Right ═══ -->
+            <div class="fund-platform-card fund-green-theme animate-on-scroll">
+                <div class="fund-card-deco"></div>
+                <div class="fund-blob-3"></div>
+
+                <div class="fund-platform-grid reverse">
+                    <!-- Stats Column -->
+                    <div class="stats-grid">
+                        <!-- Portfolio Cos -->
+                        <div class="stat-card green-accent">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2 L20 7 L20 17 L12 22 L4 17 L4 7 Z" />
+                                    <path d="M12 12 L20 7" />
+                                    <path d="M12 12 L4 7" />
+                                    <path d="M12 12 V22" />
+                                </svg>
+                            </div>
+                            <span class="stat-card-value">5+</span>
+                            <span class="stat-card-label">Portfolio Cos</span>
+                        </div>
+
+                        <!-- Funded by F1 -->
+                        <div class="stat-card green-accent">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <span class="stat-card-value">100%</span>
+                            <span class="stat-card-label">Funded by F1</span>
+                        </div>
+
+                        <!-- ARR Recurring -->
+                        <div class="stat-card green-accent">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M21.5 2v6h-6" />
+                                    <path d="M2.5 22v-6h6" />
+                                    <path d="M22 11.5A10 10 0 0 0 3.2 7.2" />
+                                    <path d="M2 12.5a10 10 0 0 0 18.8 4.3" />
+                                </svg>
+                            </div>
+                            <span class="stat-card-value">Multi-M</span>
+                            <span class="stat-card-label">ARR Recurring</span>
+                        </div>
+
+                        <!-- Cap Deployed -->
+                        <div class="stat-card green-accent">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2" y="6" width="20" height="12" rx="2" />
+                                    <path d="M12 12a3 3 0 1 0 0-.001" />
+                                    <path d="M6 12h.01" />
+                                    <path d="M18 12h.01" />
+                                </svg>
+                            </div>
+                            <span class="stat-card-value">~$1M</span>
+                            <span class="stat-card-label">Cap Deployed</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="fund-content">
+                        <span class="fund-badge success"><span class="fund-badge-dot"></span> Fully Subscribed</span>
+                        <h3>Fund 1</h3>
+                        <span class="fund-headline-accent"></span>
+
+                        <p class="fund-description">Our Fund 1 invests and owns 100% of new startups that are incubated
+                            from ideas generated internally via our Venture Studio. It invests in our startups with an
+                            objective to achieve 3 key milestones – paying customers, breakeven, and $1million in ARR.
+                        </p>
+
+                        <p class="fund-description">Our portfolio includes successful ventures like Ignitho, Piqual,
+                            Talentou, Prodeia, and Caimue, past the Death Valley curve where most startups fail.</p>
+
+                        <div class="fund-cta-area">
+                            <a href="portfolio.html" class="btn btn-outline-green">View Portfolio <svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT CTA SECTION -->
+    <section class="cta-section cta-hero-bg">
+        <!-- Animated Gradient Orbs -->
+        <div class="hero-gradient-orb hero-gradient-orb-1"></div>
+        <div class="hero-gradient-orb hero-gradient-orb-2"></div>
+        <div class="hero-gradient-orb hero-gradient-orb-3"></div>
+        <div class="hero-gradient-orb hero-gradient-orb-4"></div>
+
+        <!-- Investment Scribbles Background Layer -->
+        <div class="scribbles-layer">
+            <span class="scribble scribble-word" style="top: 12%; left: 3%;">ROI</span>
+            <span class="scribble scribble-word" style="top: 25%; right: 8%;">Growth</span>
+            <span class="scribble scribble-word" style="bottom: 30%; left: 5%;">Scale</span>
+            <span class="scribble scribble-word" style="bottom: 15%; right: 5%;">Fund</span>
+            <span class="scribble scribble-symbol" style="top: 18%; left: 12%;">$</span>
+            <span class="scribble scribble-symbol" style="top: 35%; right: 3%;">%</span>
+            <span class="scribble scribble-symbol" style="bottom: 22%; right: 12%;">$</span>
+            <span class="scribble scribble-symbol" style="bottom: 40%; left: 2%;">✦</span>
+
+            <svg class="scribble scribble-doodle" style="top: 15%; right: 15%;" width="50" height="40"
+                viewBox="0 0 50 40">
+                <path d="M5 35 L15 25 L25 30 L35 15 L45 5" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+
+            <svg class="scribble scribble-doodle doodle-arrow" style="top: 70%; right: 8%;" width="40" height="25"
+                viewBox="0 0 40 25">
+                <path d="M5 20 Q20 5 35 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+                <path d="M30 8 L35 12 L30 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <div class="container relative z-10">
+            <div class="cta-content-grid">
+                <!-- Left Column: Text -->
+                <div class="cta-text animate-on-scroll">
+                    <h2 class="cta-title">Fancy a Chat?</h2>
+                    <p class="cta-description">We have offices and teams across the US, UK and India for a coffee
+                        catchup</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="cta-visual animate-on-scroll">
+                    <img src="images/Tampa (3).png" alt="Tampa Spark Capital Office" class="cta-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <img src="images/logo.png" alt="Spark Capital Logo" class="footer-logo">
+                    <p class="footer-disclosure">
+                        <strong>DISCLOSURE:</strong> Spark Capital is not a registered broker-dealer, investment
+                        adviser, investment manager, or registered funding portal. Neither the Securities and Exchange
+                        Commission nor any state securities regulator has approved or disapproved the securities, the
+                        terms of any offerings, or the accuracy or completeness of any materials presented on this
+                        website.
+                        <br><br>
+                        Spark Capital does not make investment recommendations to you or provide any analysis, advice,
+                        or opinions regarding any investment. Spark Capital does not solicit, recommend, or endorse any
+                        particular security or offering. Spark Capital does not verify information provided by companies
+                        or issuers and makes no representations or warranties as to the accuracy or completeness of any
+                        such information.
+                        <br><br>
+                        The information contained on this website is provided by Spark Capital and/or third parties.
+                        Spark Capital and its affiliates, directors, officers, employees, agents, or representatives
+                        shall not be liable for any errors or omissions in the content of this website or for any
+                        actions taken in reliance thereon.
+                        <br><br>
+                        This website does not constitute an offer to sell or a solicitation of an offer to buy any
+                        securities. Any offering of securities will be made only through definitive offering documents
+                        and only to qualified or accredited investors pursuant to applicable securities laws.
+                        <br><br>
+                        Investments in private companies and venture-backed businesses are speculative, involve a high
+                        degree of risk, and may result in the loss of the entire investment. Past performance is not
+                        indicative of future results.
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <a href="investors.html" class="footer-link">Investors</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+
+                    <div class="footer-social">
+                        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <span>in</span>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                            <span>f</span>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                            <span>ig</span>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                            <span>𝕏</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Spark Capital. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
