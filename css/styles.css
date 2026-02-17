@@ -224,7 +224,7 @@ a:hover {
 
 /* CTA with Hero-style gradient background */
 .cta-hero-bg {
-    background: linear-gradient(135deg, #2e1065 0%, #1d4ed8 35%, #06b6d4 65%, #6d28d9 100%) !important;
+    background: linear-gradient(135deg, #3b0764 0%, #6d28d9 30%, #1e1b4b 60%, #9333ea 85%, #38bdf8 100%) !important;
     position: relative;
     overflow: hidden;
     padding: var(--spacing-24) 0;
@@ -489,7 +489,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(135deg, #2e1065 0%, #1d4ed8 35%, #06b6d4 65%, #6d28d9 100%);
+    background: linear-gradient(135deg, #3b0764 0%, #6d28d9 30%, #1e1b4b 60%, #9333ea 85%, #38bdf8 100%);
     /* Stronger purple/violet gradient */
     padding-top: calc(var(--header-height) + var(--spacing-12));
     padding-bottom: var(--spacing-12);
@@ -525,7 +525,7 @@ a:hover {
 .hero-gradient-orb-1 {
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.9) 0%, rgba(109, 40, 217, 0.6) 40%, transparent 70%);
+    background: radial-gradient(circle, rgba(147, 51, 234, 0.9) 0%, rgba(88, 28, 135, 0.6) 40%, transparent 70%);
     top: 10%;
     left: 10%;
     animation: moveVertical 30s ease infinite;
@@ -534,7 +534,7 @@ a:hover {
 .hero-gradient-orb-2 {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(167, 139, 250, 0.8) 0%, rgba(91, 33, 182, 0.5) 40%, transparent 70%);
+    background: radial-gradient(circle, rgba(192, 38, 211, 0.8) 0%, rgba(124, 58, 237, 0.5) 40%, transparent 70%);
     top: 30%;
     right: 15%;
     animation: moveInCircle 20s reverse infinite;
@@ -543,7 +543,7 @@ a:hover {
 .hero-gradient-orb-3 {
     width: 550px;
     height: 550px;
-    background: radial-gradient(circle, rgba(192, 38, 211, 0.8) 0%, rgba(147, 51, 234, 0.5) 40%, transparent 70%);
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.8) 0%, rgba(30, 27, 75, 0.5) 40%, transparent 70%);
     bottom: 20%;
     left: 20%;
     animation: moveInCircle 40s linear infinite;
