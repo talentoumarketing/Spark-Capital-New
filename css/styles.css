@@ -1934,79 +1934,71 @@ a:hover {
 
 /* === FOOTER === */
 .footer {
-    background-color: var(--gray-900);
-    color: var(--gray-300);
-    padding: var(--spacing-16) 0 var(--spacing-8);
+    background-color: #f8f9fa;
+    color: var(--gray-700);
+    padding: var(--spacing-12) 0 var(--spacing-8);
+    border-top: 1px solid var(--gray-200);
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: var(--spacing-12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-8);
     margin-bottom: var(--spacing-12);
 }
 
 .footer-logo {
-    height: 50px;
+    height: 48px;
     width: auto;
-    margin-bottom: var(--spacing-6);
-}
-
-.footer-disclosure {
-    font-size: var(--font-size-xs);
-    line-height: 1.6;
-    color: var(--gray-400);
-    margin-bottom: var(--spacing-8);
+    display: block;
 }
 
 .footer-nav {
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing-3);
-}
-
-.footer-nav h4 {
-    color: var(--white);
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--spacing-4);
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-8);
 }
 
 .footer-link {
-    color: var(--gray-300);
+    color: var(--gray-700);
     font-size: var(--font-size-sm);
+    font-weight: 500;
     transition: color var(--transition-fast);
 }
 
 .footer-link:hover {
-    color: var(--white);
+    color: var(--primary-blue);
 }
 
 .footer-social {
     display: flex;
     gap: var(--spacing-4);
-    margin-top: var(--spacing-6);
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
-    background-color: var(--gray-700);
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid var(--gray-300);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
-    font-size: var(--font-size-lg);
+    color: var(--gray-700);
+    font-size: 1rem;
     transition: all var(--transition-base);
 }
 
 .social-icon:hover {
-    background-color: var(--secondary-teal);
-    transform: translateY(-3px);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+    transform: translateY(-2px);
 }
 
 .footer-bottom {
-    border-top: 1px solid var(--gray-700);
+    border-top: 1px solid var(--gray-200);
     padding-top: var(--spacing-6);
     display: flex;
     justify-content: space-between;
@@ -2017,7 +2009,13 @@ a:hover {
 
 .footer-legal {
     display: flex;
-    gap: var(--spacing-6);
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.footer-divider {
+    color: var(--gray-400);
+    font-size: var(--font-size-xs);
 }
 
 .scroll-to-top {
@@ -2369,7 +2367,8 @@ a:hover {
 
 /* === THREE PHASE MODEL CARDS (Folder Style) === */
 .step-card {
-    background: white;
+    background: #ecfeff;
+    /* Set full card to green */
     border-radius: 24px;
     padding: 0;
     /* Remove padding to let content fill the card */
@@ -2458,12 +2457,10 @@ a:hover {
 /* Folder Content Area */
 .step-content {
     flex-grow: 1;
-    padding: 32px 24px 24px;
+    padding: 80px 32px 32px;
+    /* Increased top padding since label is absolute */
     position: relative;
-    border-radius: 24px 24px 0 0;
-    /* Folder Tab Shape */
-    margin-top: -24px;
-    /* Pull up over visual area */
+    border-radius: 24px;
     z-index: 5;
 }
 
@@ -2510,7 +2507,10 @@ a:hover {
 
 /* Typography */
 .step-title {
-    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    /* Match section heading */
+    font-size: 24px;
+    /* Slightly larger for serif clarity */
     font-weight: 700;
     margin-bottom: 16px;
     position: relative;
@@ -2564,7 +2564,8 @@ a:hover {
 }
 
 .scribble-bottom-2 {
-    bottom: -60px;
+    bottom: -80px;
+    /* Push further down to make room for arrow above text */
     left: 50%;
     transform: translateX(-50%);
 }
