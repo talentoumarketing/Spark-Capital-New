@@ -439,14 +439,14 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #37be7f;
+    background-color: #67cf00;
     color: var(--white);
-    border-color: #37be7f;
+    border-color: #67cf00;
 }
 
 .btn-primary:hover {
-    background-color: #2da06a;
-    border-color: #2da06a;
+    background-color: #59b300;
+    border-color: #59b300;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -2743,8 +2743,8 @@ a:hover {
 .btn-outline-green {
     display: inline-block;
     background-color: transparent;
-    color: #37be7f;
-    border: 2px solid #37be7f;
+    color: #67cf00;
+    border: 2px solid #67cf00;
     padding: var(--spacing-3) var(--spacing-6);
     border-radius: 8px;
     font-weight: 600;
@@ -2758,10 +2758,10 @@ a:hover {
 }
 
 .btn-outline-green:hover {
-    background-color: #37be7f;
+    background-color: #67cf00;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(55, 190, 127, 0.2);
+    box-shadow: 0 4px 12px rgba(103, 207, 0, 0.2);
 }
 
 /* Ensure two column grid works well for story/rocket merge */
