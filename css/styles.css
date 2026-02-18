@@ -2360,6 +2360,22 @@ a:hover {
     line-height: 1.6;
     color: var(--gray-800);
     text-align: left;
+    margin-bottom: var(--spacing-6);
+}
+
+.rocket-card-cta {
+    display: inline-block;
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    padding-top: var(--spacing-2);
+}
+
+.rocket-card-cta:hover {
+    color: var(--secondary-teal);
+    transform: translateX(5px);
 }
 
 .story-cta-left {
