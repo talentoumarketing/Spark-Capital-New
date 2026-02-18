@@ -2330,8 +2330,8 @@ a:hover {
 .rocket-card-sticker {
     position: absolute;
     top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 5%;
+    /* Moved to top right */
     width: 90px;
     /* Reduced size */
     height: auto;
@@ -2379,8 +2379,7 @@ a:hover {
 }
 
 .story-cta-left {
-    grid-column: 1;
-    grid-row: 2;
+    margin-top: var(--spacing-8);
 }
 
 .story-cta-right {
