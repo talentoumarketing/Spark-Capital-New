@@ -2805,6 +2805,47 @@ a:hover {
         box-shadow 0.4s cubic-bezier(.25, .8, .25, 1);
 }
 
+.at-a-glance {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.at-a-glance h4 {
+    font-family: var(--font-family-serif);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.glance-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.glance-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+.glance-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+.fund-green-theme .glance-list li::before {
+    color: #4ade80;
+}
+
+
 .fund-platform-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
@@ -2812,101 +2853,14 @@ a:hover {
 
 /* ── Purple Theme (Fund 2) ── */
 .fund-purple-theme {
-    background: #F0E6F6;
-}
-
-/* Blob 1 — large, top-right */
-.fund-purple-theme::after {
-    content: '';
-    position: absolute;
-    top: -60px;
-    right: -40px;
-    width: 340px;
-    height: 320px;
-    border-radius: 50% 40% 55% 45%;
-    background: rgba(200, 160, 240, 0.30);
-    filter: blur(40px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* Blob 2 — medium, bottom-left */
-.fund-purple-theme .fund-card-deco {
-    position: absolute;
-    bottom: -50px;
-    left: -30px;
-    width: 260px;
-    height: 240px;
-    border-radius: 45% 55% 40% 60%;
-    background: rgba(190, 140, 230, 0.22);
-    filter: blur(50px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* Blob 3 — small, right-center */
-.fund-purple-theme .fund-blob-3 {
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    width: 150px;
-    height: 140px;
-    border-radius: 55% 45% 50% 50%;
-    background: rgba(210, 175, 250, 0.18);
-    filter: blur(45px);
-    pointer-events: none;
-    z-index: 0;
-    transform: translateY(-50%);
+    background: #ffffff;
 }
 
 /* ── Green Theme (Fund 1) ── */
 .fund-green-theme {
-    background: #E6F7EE;
+    background: #ffffff;
 }
 
-/* Blob 1 — large, top-left */
-.fund-green-theme::after {
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: -40px;
-    width: 320px;
-    height: 300px;
-    border-radius: 55% 45% 50% 50%;
-    background: rgba(140, 220, 160, 0.28);
-    filter: blur(40px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* Blob 2 — medium, bottom-right */
-.fund-green-theme .fund-card-deco {
-    position: absolute;
-    bottom: -40px;
-    right: -30px;
-    width: 260px;
-    height: 250px;
-    border-radius: 40% 60% 55% 45%;
-    background: rgba(120, 210, 150, 0.20);
-    filter: blur(50px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* Blob 3 — small, left-center */
-.fund-green-theme .fund-blob-3 {
-    position: absolute;
-    top: 55%;
-    left: 8%;
-    width: 140px;
-    height: 130px;
-    border-radius: 50% 50% 40% 60%;
-    background: rgba(150, 230, 175, 0.18);
-    filter: blur(45px);
-    pointer-events: none;
-    z-index: 0;
-    transform: translateY(-50%);
-}
 
 /* --- Grid Layout --- */
 .fund-platform-grid {
@@ -2921,6 +2875,40 @@ a:hover {
 .fund-platform-grid.reverse {
     grid-template-columns: 1fr 1.2fr;
 }
+
+/* ══════════════════════════════════════════
+   FUND ILLUSTRATION AREA
+   ══════════════════════════════════════════ */
+
+/* Container */
+.fund-illustration {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
+}
+
+.fund-illustration-img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+.fund-platform-card:hover .fund-illustration-img {
+    transform: scale(1.02);
+}
+
+/* ── Responsive Illustration ── */
+@media (max-width: 768px) {
+    .fund-illustration {
+        margin-bottom: 20px;
+    }
+}
+
 
 /* --- Content Column --- */
 .fund-content {
@@ -3031,6 +3019,7 @@ a:hover {
 .fund-cta-area .btn:hover svg {
     transform: translateX(3px);
 }
+
 
 /* --- Stats Grid — Bento Style --- */
 .stats-grid {
