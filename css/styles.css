@@ -2818,16 +2818,22 @@ a:hover {
 }
 
 .at-a-glance {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin-top: 1.5rem;
+    padding: 24px;
+    background: linear-gradient(135deg, #f8fbff 0%, #f0f7ff 100%);
+    border: 1px solid rgba(66, 133, 244, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .at-a-glance h4 {
     font-family: var(--font-family-serif);
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: #4285f4;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
 }
 
 .glance-list {
@@ -2849,7 +2855,7 @@ a:hover {
     content: "•";
     position: absolute;
     left: 0;
-    color: var(--primary-blue);
+    color: #4285f4;
     font-weight: bold;
 }
 
