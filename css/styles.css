@@ -2306,21 +2306,17 @@ a:hover {
 }
 
 .rocket-sticker-card {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/business-people-meeting-room-discussing-charts.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    padding: var(--spacing-10) var(--spacing-8) var(--spacing-8);
+    background-color: #EEDDFF;
+    color: #1a1a2e;
+    padding: 40px 36px 120px;
     border-radius: 24px;
     width: 115%;
-    /* Broader than reference */
     max-width: 580px;
-    transform: rotate(0deg);
-    /* Not slanting */
     position: relative;
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    box-shadow: 0 10px 30px -5px rgba(107, 33, 168, 0.12);
     transition: all var(--transition-base);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .rocket-sticker-card:hover {
@@ -2341,8 +2337,9 @@ a:hover {
 
 .rocket-card-title {
     font-family: var(--font-family-serif);
-    font-size: 2.25rem;
-    color: #ffffff !important;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a2e !important;
     margin-bottom: var(--spacing-4);
     text-align: left;
 }
@@ -2355,29 +2352,41 @@ a:hover {
 }
 
 .rocket-card-text {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #444;
     text-align: left;
-    margin-bottom: var(--spacing-8);
+    margin-bottom: var(--spacing-6);
+    max-width: 90%;
 }
 
 .rocket-card-cta {
     display: inline-block;
-    color: #ffffff;
-    background: var(--primary-blue);
-    padding: 12px 24px;
-    border-radius: 8px;
+    color: #1a1a2e;
     font-weight: 600;
     font-size: 0.95rem;
     text-decoration: none;
     transition: all var(--transition-fast);
+    position: relative;
+    z-index: 2;
 }
 
 .rocket-card-cta:hover {
-    background: var(--secondary-teal);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: var(--primary-blue);
+    transform: translateX(5px);
+}
+
+/* Rocket card overlapping image */
+.rocket-card-image {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 55%;
+    max-width: 280px;
+    border-radius: 16px 0 24px 0;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .story-cta-left {
