@@ -495,6 +495,19 @@ a:hover {
     padding-bottom: var(--spacing-12);
 }
 
+/* Subpage shorter hero banner */
+.hero.hero-subpage {
+    min-height: 40vh;
+    padding-top: calc(var(--header-height) + var(--spacing-8));
+    padding-bottom: var(--spacing-8);
+}
+
+@media (max-width: 768px) {
+    .hero.hero-subpage {
+        min-height: 30vh;
+    }
+}
+
 /* Grid Overlay Effect */
 .hero::after {
     content: '';
