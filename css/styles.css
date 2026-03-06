@@ -3270,3 +3270,129 @@ a:hover {
         margin-top: var(--spacing-8);
     }
 }
+
+/* ================================================================
+   WHY INVEST SECTION
+   ================================================================ */
+
+#why-invest-section {
+    background: #ffffff;
+    padding: var(--spacing-16) 0;
+}
+
+.why-invest-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 32px;
+}
+
+.why-invest-content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #6d28d9 0%, #3b82f6 50%, #67cf00 100%);
+}
+
+.why-invest-content h2 {
+    color: #1a1a2e;
+}
+
+.why-invest-body p {
+    color: #374151;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+.why-invest-body p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .why-invest-content {
+        padding-left: 20px;
+    }
+
+    .why-invest-content h2 {
+        font-size: 2rem !important;
+    }
+}
+
+/* ================================================================
+   STARTUPS IMPACT / CLIENT LOGOS SECTION
+   ================================================================ */
+
+#startups-impact-section {
+    padding: var(--spacing-16) 0;
+}
+
+.client-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.client-logo-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    padding: 28px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    min-height: 100px;
+}
+
+.client-logo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: rgba(109, 40, 217, 0.15);
+}
+
+.client-logo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.client-logo-placeholder span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive — 3 columns on tablets, 2 on mobile */
+@media (max-width: 1024px) {
+    .client-logos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .client-logos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .client-logo-card {
+        padding: 20px 14px;
+        min-height: 80px;
+        border-radius: 12px;
+    }
+
+    #startups-impact-section h2 {
+        font-size: 1.8rem !important;
+    }
+}
